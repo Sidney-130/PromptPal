@@ -1,4 +1,3 @@
-import React from "react";
 import logo from "../assets/logobg.avif";
 import { useState } from "react";
 import { navItems } from "./Constants";
@@ -20,7 +19,7 @@ const Navbar = () => {
               Prompt<span className="text-purple-400">Pal</span>
             </span>
           </div>
-          <ul className="hidden lg:flex ml-14 space-x-12 ">
+          <ul className="hidden lg:flex  ml-14 space-x-12 ">
             {navItems.map((item, index) => (
               <li key={index}>
                 <a className="hover:text-purple-400" href={item.href}>
@@ -50,16 +49,19 @@ const Navbar = () => {
           </div>
         </div>
         {mobileDrawerOpen && (
-          <div className="fixed right-0 z-20 bg-neutral-900 w-full p-12 flex flex-col justify-center items-center lg:hidden">
+          <div className="fixed right-0 z-20 bg-neutral-900 w-full p-12 flex flex-col justify-center lg:hidden">
             <ul>
               {navItems.map((item, index) => (
-                <li key={index} className="py-4">
+                <li
+                  key={index}
+                  className="py-4 flex flex-col justify-start text-md"
+                >
                   <a href={item.href}>{item.label}</a>
                 </li>
               ))}
             </ul>
-            <div className="flex space-x-6">
-              <a href="#" className="py-2 px-3 border rounded-md">
+            <div className="flex space-x-6 mt-3">
+              <a href="#" className="py-2 px-2 border rounded-md">
                 Sign In
               </a>
               <a

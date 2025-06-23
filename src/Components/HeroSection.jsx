@@ -16,14 +16,14 @@ const HeroSection = () => {
         platform. Get access to free and ready to use prompts all for free and
         decentralized.
       </p>
-      <div className="flex justify-center my-10">
+      <div className="flex items-center justify-between my-10">
         <a
           href="#"
-          className="bg-gradient-to-r from-purple-500 to-purple-800 py-3  px-4 mx-3 rounded-md"
+          className="bg-gradient-to-r from-purple-500 to-purple-800 py-3 px-2 rounded-md text-sm"
         >
           Start for free
         </a>
-        <a href="#" className="py-3 px-4 mx-3 rounded-md border">
+        <a href="#" className="text-sm py-3 px-3 mx-3 rounded-md border">
           Documentation
         </a>
       </div>

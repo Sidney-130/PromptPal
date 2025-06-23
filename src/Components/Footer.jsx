@@ -2,9 +2,9 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <footer className="mt-10  bottom-0 bg-purple-800 py-6">
+    <footer className="mt-10  text-gray-400 bottom-0 py-6 border-t border-white/10">
       <div className="container px-10 mx-auto relative text-1xl lg:px-30">
-        <div className="flex justify-between item-center ">
+        <div className="flex justify-between item-center underline">
           <div>
             <h3>Discord</h3>
           </div>
